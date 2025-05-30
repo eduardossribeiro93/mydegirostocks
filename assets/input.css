@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .upload-area {
+        @apply w-full h-32 border-2 border-dashed border-secondary rounded-lg
+        hover:border-secondary-light transition-colors duration-200
+        bg-primary-light/30 flex items-center justify-center cursor-pointer;
+    }
+
+    .data-table-container {
+        @apply mt-6 bg-primary-light rounded-lg shadow-lg overflow-hidden;
+    }
+
+    .data-table-header {
+        @apply bg-primary-lighter text-secondary-lighter font-semibold p-4;
+    }
+
+    .data-table-cell {
+        @apply p-4 border-b border-secondary-dark text-secondary-light;
+    }
+
+    .error-message {
+        @apply text-red-400 bg-red-900/30 px-4 py-3 rounded-lg border border-red-800;
+    }
+
+    .success-message {
+        @apply text-green-400 bg-green-900/30 px-4 py-3 rounded-lg border border-green-800;
+    }
+} 

@@ -1,0 +1,12 @@
+{
+  "name": "mydegirostocks",
+  "version": "1.0.0",
+  "description": "A Dash application to track investments and historical performance",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/custom.css -o ./assets/dist/styles.css --watch",
+    "build:css:prod": "tailwindcss -i ./assets/custom.css -o ./assets/dist/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+} 

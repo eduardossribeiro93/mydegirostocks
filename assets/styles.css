@@ -1,0 +1,160 @@
+/* Custom theme variables */
+:root {
+    --theme-bg-primary: #0f172a;
+    --theme-bg-secondary: #1e293b;
+    --theme-bg-accent: #334155;
+    --theme-text-primary: #f1f5f9;
+    --theme-text-secondary: #cbd5e1;
+    --theme-text-accent: #94a3b8;
+    --theme-border-primary: #475569;
+    --theme-border-accent: #64748b;
+}
+
+/* Layout components */
+.app-container {
+    min-height: 100vh;
+    background-color: var(--theme-bg-primary);
+    color: var(--theme-text-primary);
+}
+
+.content-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--theme-bg-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* Typography */
+.page-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--theme-text-primary);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: var(--theme-text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.subsection-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--theme-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.body-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--theme-text-secondary);
+}
+
+.body-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--theme-text-secondary);
+}
+
+/* Upload area */
+.upload-area {
+    width: 100%;
+    height: 8rem;
+    border: 2px dashed var(--theme-border-primary);
+    border-radius: 0.5rem;
+    background-color: rgba(30, 41, 59, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.upload-area:hover {
+    border-color: var(--theme-border-accent);
+}
+
+.upload-text {
+    color: var(--theme-text-secondary);
+}
+
+.upload-button {
+    border: 1px solid var(--theme-border-primary);
+    color: var(--theme-text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+    background-color: rgba(51, 65, 85, 0.5);
+}
+
+/* Data table styles */
+.data-table-container {
+    margin-top: 1.5rem;
+    background-color: var(--theme-bg-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Status messages */
+.error-message {
+    color: #fca5a5;
+    background-color: rgba(127, 29, 29, 0.5);
+    border: 1px solid #dc2626;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.success-message {
+    color: #86efac;
+    background-color: rgba(6, 78, 59, 0.5);
+    border: 1px solid #059669;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Utility classes */
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+} 

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mydegirostocks"
+version = "0.1.0"
+description = "A Dash application to track investments and historical performance"
+authors = ["Eduardo Ribeiro"]
+readme = "README.md"
+packages = [{include = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dash = "^3.0.4"
+pandas = "^2.2.3"
+dash-mantine-components = "^0.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
